@@ -1,0 +1,7 @@
+@function guess-color($color) {
+  @if (lightness($color) > 65) {
+    @return $text-color;
+  } @else {
+    @return $text-color-contrast;
+  }
+}
